@@ -16,4 +16,5 @@
 		echo $b;
 	}
 	echo "\n";
+#Copyright: TukanSihir
 ?>
