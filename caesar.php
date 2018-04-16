@@ -2,7 +2,7 @@
 	echo 'Masukkan String: ';
 	$input = trim(fgets(STDIN));
 	$split = str_split($input);
-	$space = array(' ', '_', '!');
+	$space = '!';
 	echo 'Masukkan kelipatan : ';
 	$jml = trim(fgets(STDIN));
 	
@@ -10,7 +10,7 @@
 		
 		$a = ord($split[$i]) + $jml;
 		$b = chr($a);
-		if($b == $space[2]){
+		if($b == $space){
 			$b = str_replace($b, ' ', $b);
 		}
 		echo $b;
